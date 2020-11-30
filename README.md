@@ -1,69 +1,68 @@
 ## !!! Warning: the version with "t" is the test version, there may be stability problems! Not recommended for production environments
-## !!! 警告：带有“t”的是测试版本，可能存在稳定性问题！不建议用于生产环境
+
 
 # 1. Overview
-T12 焊台控制器功能介绍
+
 T12 Quick Heating Soldering Station featuring
-- 烙铁头温度实时监测
+
 - Temperature measurement of the tip
-- PID温度控制
+
 - Direct or PID control of the heater
-- 可以通过编码器进行控制温度
+
 - Temperature control via rotary encoder
-- 短按编码器进入短时升温模式
+
 - Boost mode by short pressing rotary encoder switch
-- 长按编码器进入主菜单
+
 - Setup menu by long pressing rotary encoder switch
-- 手柄震动检测（需要手柄含有震动传感器）
+
 - Handle movement detection (by checking ball switch)
-- 手柄连接检测（通过判断烙铁头温度是否能够被读取来实现）
+
 - Iron unconnected detection (by idenfying invalid temperature readings)
-- 定时器设定 - 随眠，关机时间
+
 - Time driven sleep/power off mode if iron is unused (movement detection)
-- 可以测量主控芯片电压以及温度
+
 - Measurement of input voltage, Vcc and ATmega's internal temperature
-- 在OLED上实现信息显示
+
 - Information display on OLED
-- 支持无源蜂鸣器
+
 - Buzzer
-- 允许设置不同烙铁头的温度校准值
 - Calibrating and managing different soldering tips
-- 设置被保存在EEPROM，掉电不丢失
+
 - Storing user settings into the EEPROM
-- 允许热插拔烙铁头，并弹出烙铁头配置选择菜单
+
 - Tip change detection
 
 ## =========UI upgraded version =========
 
 
-- 芯片过热以及低电压报警
+
 - Chip overheating and low voltage alarm
-- 更好的实时温度条以及实时功率条
+
 - Better real-time temperature bar and real-time power bar
-- 拥有过渡动画
+
 - Have transition animation
-- 内置屏幕保护程序
+
 - Built in screen saver
-- 屏幕翻转设置
+
 - Screen flip settings
-- 内置英文、中文语言包
+
 - Built in English and Chinese language pack
-- 开机密码设置
+
 - System Password
-- 允许设置旋钮方向
+
 - Knob direction setting menu
-- 内嵌看门狗，宕机自动重启
+
 - Watchdog timer automatic reset the MCU
 
 ## V1.8t7 New features:
 
-- EEPROM可用性检查机制
+
 - EEPROM availability check
 
-- 允许保存最大30个烙铁头的配置
+
 - Tip change detection30 preservable soldering tip configurations
 
-- 9段温度曲线拟合
+
 - 9 segments of temperature curve fitting
 
 ## Links:
